@@ -15,7 +15,7 @@ def message():
 	apparel_description=soup.find_all("p")[0].get_text()
 	apparel_points=soup.find("div", {"class": "desclist"}).find_all("li")
 
-	x = "Good Evening, love. Today, we have "+apparel_title+" going for "+apparel_price+". Here is a little description: "+apparel_description+" Check it out at "+url
+	x = "Good Evening, love. Today, we have \n\n"+apparel_title+" going for "+apparel_price+". \n\n Here is a little description: \n\n "+apparel_description+" \n\n Check it out at "+url
 	# print(f"So, on today's menu is ~ {apparel_title} ~ selling for a hot {apparel_price}")
 	return x
 
